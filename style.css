@@ -1,0 +1,44 @@
+.logo{
+    width: 130px;
+    height: 100px;
+}
+
+.btnBack{
+    border: 2px solid  rgba(0, 81, 130, 1);
+}
+
+.btnBack:hover{
+    background-color: rgba(0, 81, 130, 1);
+}
+
+.secondRow{
+    border: 2px solid rgba(0, 81, 130, 1);
+}
+
+
+.dropMain{
+    width: 800px;
+    border: 2px solid black;
+}
+
+.dropItem{
+    width: 800px;
+}
+
+.btnLink{
+    width: 600px;
+    height: 700px;
+    border: 2px solid rgba(0, 81, 130, 1) ;
+}
+
+.btnLink:hover{
+    background-color: rgba(0, 81, 130, 0.6);
+}
+
+
+
+
+
+
+
+

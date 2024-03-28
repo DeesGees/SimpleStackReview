@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Stack 1</title>
+</head>
+<body>
+    <div class="mainDiv mt-3">
+        <div class="firstRow container-fluid px-5">
+            <div class="row">
+                <div class="col-1">
+                    <button class="btn btnBack" onclick="location.href= 'stack1-2.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="46" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="col-10 text-center">
+                    <div class="dropdown d-inline-block">
+                        <button class="btn dropMain dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wählen Sie Ihr Regal
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item dropItem" href="#" onclick="updateSelectedItem('Wareneingang - Warenaussgang')">Wareneingang \ Warenaussgang</a></li>
+                          <li><a class="dropdown-item dropItem" href="#" onclick="updateSelectedItem('Zuschnitt')">Zuschnitt</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-1">
+                    <img src="images/HIK.jpg.png" class="logo" alt="LOGO">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <h1>Regal 1</h1>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+
+                <div class="row gap-4 text-center justify-content-center p-5">
+                    <div class="row justify-content-between">
+                        <div class="col-3 stack-1-row-1-1" id="svg1" >
+                            <svg width="60" height="210" viewBox="0 0 60 210" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG1" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG1')">
+                                <path id="path1" d="M0 0H60V200H0V0Z" fill="#196F3D"/>
+                                <path d="M2 200H9.58621V210H2V200Z" fill="#201E1E"/>
+                                <path d="M49.4138 200H57V210H49.4138V200Z" fill="#201E1E"/>
+                                <path d="M27.9195 200H35.5057V210H27.9195V200Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                        <div class="col-3 stack-1-row-1-2" >
+                            <svg id="selectedSVG2" class="selectable-svg" width="60" height="210" viewBox="0 0 60 210" fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG2')">
+                                <path id="path1" d="M0 0H60V200H0V0Z" fill="#196F3D"/>
+                                <path d="M2 200H9.58621V210H2V200Z" fill="#201E1E"/>
+                                <path d="M49.4138 200H57V210H49.4138V200Z" fill="#201E1E"/>
+                                <path d="M27.9195 200H35.5057V210H27.9195V200Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                        <div class="col-3 stack-1-row-1-3">
+                            <svg id="selectedSVG3" class="selectable-svg" width="60" height="210" viewBox="0 0 60 210" fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG3')">
+                                <path id="path1" d="M0 0H60V200H0V0Z" fill="#196F3D"/>
+                                <path d="M2 200H9.58621V210H2V200Z" fill="#201E1E"/>
+                                <path d="M49.4138 200H57V210H49.4138V200Z" fill="#201E1E"/>
+                                <path d="M27.9195 200H35.5057V210H27.9195V200Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-3 stack-1-row-2-1">
+                            <svg width="60" height="130" viewBox="0 0 60 140" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG4" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG4')">
+                                <path d="M0 0H60V130H0V0Z" fill="#196F3D"/>
+                                <path d="M2 130H9.58621V140H2V130Z" fill="#201E1E"/>
+                                <path d="M49.4138 130H57V140H49.4138V130Z" fill="#201E1E"/>
+                                <path d="M27.9195 130H35.5057V140H27.9195V130Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                        <div class="col-3 stack-1-row-2-2">
+                            <svg width="60" height="130" viewBox="0 0 60 140" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG5" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG5')">
+                                <path d="M0 0H60V130H0V0Z" fill="#196F3D"/>
+                                <path d="M2 130H9.58621V140H2V130Z" fill="#201E1E"/>
+                                <path d="M49.4138 130H57V140H49.4138V130Z" fill="#201E1E"/>
+                                <path d="M27.9195 130H35.5057V140H27.9195V130Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                        <div class="col-3 stack-1-row-2-3">
+                            <svg width="60" height="130" viewBox="0 0 60 140" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG6" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG6')">
+                                <path d="M0 0H60V130H0V0Z" fill="#196F3D"/>
+                                <path d="M2 130H9.58621V140H2V130Z" fill="#201E1E"/>
+                                <path d="M49.4138 130H57V140H49.4138V130Z" fill="#201E1E"/>
+                                <path d="M27.9195 130H35.5057V140H27.9195V130Z" fill="#201E1E"/>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-3 stack-1-row-3-1">
+                            <svg width="60" height="110" viewBox="0 0 60 110" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG7" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG7')">
+                                <path d="M0 0H60V102.143H0V0Z" fill="#196F3D"/>
+                                <path d="M2 102.143H9.58621V110H2V102.143Z" fill="#201E1E"/>
+                                <path d="M49.4138 102.143H57V110H49.4138V102.143Z" fill="#201E1E"/>
+                                <path d="M27.9195 102.143H35.5057V110H27.9195V102.143Z" fill="#201E1E"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="col-3 stack-1-row-3-2">
+                            <svg width="60" height="110" viewBox="0 0 60 110" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG8" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG8')">
+                                <path d="M0 0H60V102.143H0V0Z" fill="#196F3D"/>
+                                <path d="M2 102.143H9.58621V110H2V102.143Z" fill="#201E1E"/>
+                                <path d="M49.4138 102.143H57V110H49.4138V102.143Z" fill="#201E1E"/>
+                                <path d="M27.9195 102.143H35.5057V110H27.9195V102.143Z" fill="#201E1E"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="col-3 stack-1-row-3-3">
+                            <svg width="60" height="110" viewBox="0 0 60 110" fill="none" xmlns="http://www.w3.org/2000/svg" id="selectedSVG9" class="selectable-svg" data-bs-toggle="modal" data-bs-target="#colorModal" onclick="selectSVG('selectedSVG9')">
+                                <path d="M0 0H60V102.143H0V0Z" fill="#196F3D"/>
+                                <path d="M2 102.143H9.58621V110H2V102.143Z" fill="#201E1E"/>
+                                <path d="M49.4138 102.143H57V110H49.4138V102.143Z" fill="#201E1E"/>
+                                <path d="M27.9195 102.143H35.5057V110H27.9195V102.143Z" fill="#201E1E"/>
+                                </svg>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+
+
+
+<!-- Modalni prozor -->
+<div class="modal" id="colorModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Izaberite boju</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <select id="colorSelect" class="form-select">
+                    <option value="yellow">Žuta</option>
+                    <option value="red">Crvena</option>
+                    <option value="green">Zelena</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                <button type="button" class="btn btn-primary" onclick="changeColor()">Primjeni</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function selectSVG(svgId) {
+    var selectedSVG = document.getElementById(svgId);
+    var allSVGs = document.querySelectorAll('.selectable-svg');
+    
+    // Remove active class from all SVGs
+    allSVGs.forEach(function(svg) {
+        svg.classList.remove('active');
+    });
+    
+    // Add active class to the selected SVG
+    selectedSVG.classList.add('active');
+}
+
+function changeColor() {
+    var selectedColor = document.getElementById('colorSelect').value;
+    var activeSVG = document.querySelector('.selectable-svg.active');
+    
+    if (activeSVG) {
+        var firstPath = activeSVG.querySelector('path');
+        if (firstPath) {
+            firstPath.setAttribute('fill', selectedColor);
+        }
+    }
+}
+
+
+</script>
+</body>
+</html>

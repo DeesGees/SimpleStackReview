@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+    <title>Stack 2</title>
+</head>
+<body>
+    <div class="mainDiv mt-3">
+        <div class="firstRow container-fluid px-5">
+            <div class="row">
+                <div class="col-1">
+                    <button class="btn btnBack" onclick="location.href= 'index.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="46" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                          </svg>
+                    </button>
+                </div>
+                <div class="col-10 text-center">
+                    <div class="dropdown d-inline-block">
+                        <button class="btn dropMain dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wählen Sie Ihr Regal
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item dropItem" href="#" onclick="updateSelectedItem('Wareneingang - Warenaussgang')">Wareneingang \ Warenaussgang</a></li>
+                          <li><a class="dropdown-item dropItem" href="#" onclick="updateSelectedItem('Zuschnitt')">Zuschnitt</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-1">
+                    <img src="images/HIK.jpg.png" class="logo" alt="LOGO">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-center">
+            <h1>Regal 1 und 2</h1>
+        </div>
+
+
+        <div class="secondRow container-fluid mb-5 mt-5 p-5">
+            <div class="row gap-1 ">
+                    <!-- This is the begining of the first button -->
+                    <div class="pt-3">
+                        <!-- This is the begining of the first stack! -->
+                        <div class="row justify-content-center gap-5">
+                            
+                            <button class="btn btnLink col-2 justify-content-center" onclick="location.href= 'stack1.html'" >
+                            <div class="row gap-2 stack1 text-center justify-content-center p-5">
+                                <h3>Regal 1</h3>
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-1-row-1-1">
+                                        <img src="images/Group 1Palete1.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-1-2">
+                                        <img src="images/Group 1Palete1.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-1-3">
+                                        <img src="images/Group 1Palete1.svg" >
+                                    </div>
+                                </div>
+
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-1-row-2-1">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-2-2">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-2-3">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-1-row-3-1">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-3-2">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-1-row-3-3">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+
+
+
+                            <button class="btn btnLink col-2">
+                            <div class="row  gap-2 stack2 text-center p-5">
+                                <h3>Regal 2</h3>
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-2-row-1-1">
+                                        <img src="images/Group 1Palete1.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-1-2">
+                                        <img src="images/Group 1Palete1.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-1-3">
+                                        <img src="images/Group 1Palete1.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-2-row-2-1">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-2-2">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-2-3">
+                                        <img src="images/Group 2palete2.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="row gap-2 justify-content-between">
+                                    <div class="col-3 stack-2-row-3-1">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-3-2">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                    <div class="col-3 stack-2-row-3-3">
+                                        <img src="images/Group 2palete3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        </div>
+                    </div>
+                    <!-- This is the ending of the first button and stack! -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
